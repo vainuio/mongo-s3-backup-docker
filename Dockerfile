@@ -74,3 +74,4 @@ RUN set -x \
     #&& mv /etc/mongod.conf /etc/mongod.conf.orig
 #ENTRYPOINT ["mongo"]
 CMD ["mongo"]
+
