@@ -5,7 +5,7 @@ RUN apt-get update && \
     ca-certificates \
     s3cmd \
     curl && apt-get clean
-ENV MONGO_MAJOR 3.6
+ENV MONGO_MAJOR 4.0
 RUN curl https://www.mongodb.org/static/pgp/server-$MONGO_MAJOR.pub -o /etc/apt/trusted.gpg.d/mongo-keyring.gpg
 RUN echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/$MONGO_MAJOR multiverse" | tee "/etc/apt/sources.list.d/mongodb.list"
 RUN apt-get update && \
