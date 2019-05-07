@@ -5,6 +5,8 @@ RUN apt-get update && \
     ca-certificates \
     s3cmd \
     mbuffer \
+    xz-utils \
+    liblz4-tool \
     curl && apt-get clean
 ENV MONGO_MAJOR 4.0
 RUN curl https://www.mongodb.org/static/pgp/server-$MONGO_MAJOR.pub -o /etc/apt/trusted.gpg.d/mongo-keyring.gpg
