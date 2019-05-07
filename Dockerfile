@@ -4,6 +4,7 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     ca-certificates \
     s3cmd \
+    buffer \
     curl && apt-get clean
 ENV MONGO_MAJOR 4.0
 RUN curl https://www.mongodb.org/static/pgp/server-$MONGO_MAJOR.pub -o /etc/apt/trusted.gpg.d/mongo-keyring.gpg
